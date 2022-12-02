@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <form name="myForm" onsubmit="return(validate());">
+            <div class="row">
+                <label>First Name</label>
+                <input type="text" name="firstname" class="form-control" placeholder="First name" aria-label="First name"/>
+                <label>Last Name</label>
+                <input type="text" name="lastname" class="form-control" placeholder="Last name" aria-label="Last name"/><br>
+            <div class="error" id="nameErr"></div>
+            </div>
+
+            <div ng-app="">
+                <label>Address</label>
+                <input type="text" name="address" ng-model="address" required/><br>
+            </div>
+
+            <div class="row">
+                <label>E-mail Address</label>
+                <input type="text" name="email"/><br>
+                <div class="error" id="emailErr"></div>
+            </div>
+            <div class="row">
+                <label>Department</label>
+                <input type="text" name="department"/><br>
+            <div class="error" id="deptErr"></div>
+            </div>
+            <div ng-app="">
+                <label>Position</label>
+                <input type="text" name="position" ng-model="position" required/><br>
+            </div>
+            <div ng-app="">
+                <label>Contact No.</label>
+                <input type="text" name="contact#" ng-model="contact#" required/><br>
+            </div>
+            <div ng-app="">
+                <label>Salary</label>
+                <input type="text" name="salary" ng-model="salary" required/><br>
+            </div>
+            <div ng-app="">
+                <label>Username</label>
+                <input type="text" name="username" ng-model="username" required/><br>
+            </div>
+            <div>
+                <input type="submit" value="Submit" />
+                <script type="text/javascript" src="validation.js"> 
+                alert("Hello, You have Successfully Registered");
+                </script>
+            </div>
+        </form>
+    </body>
+</html>
